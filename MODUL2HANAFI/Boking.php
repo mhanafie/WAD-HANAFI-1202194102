@@ -52,10 +52,10 @@
 <?php
 $method_selected = '';
 $image_selected = '';
-$standard_bk = isset($_POST['card2']);
+$standard_bk = isset($_POST['card1']);
 $superior_bk = isset($_POST['card2']);
 $luxury_bk = isset($_POST['card3']);
-$img_src = ["bagasraya.jpg", "swissbell.jpg", "novotel.jpg"];
+$img_src = ["1.jpg", "2.jpg", "3.jpg"];
 
 if ($standard_bk) {
     $method_selected = '
@@ -122,7 +122,7 @@ if ($standard_bk) {
                 </div>
                 <div class="form-group">
                     Building Type
-                    <?= $method_selected ?>
+                    <?= $method_selected?>
                 </div>
                 <div class="form-group">
                     Phone Number
@@ -131,15 +131,15 @@ if ($standard_bk) {
                     <div class="form-group">
                         Add Service(s)
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="services[]" value="Room Services"
+                            <input class="form-check-input" type="checkbox" name="service[]" value="Room Services"
                                    id="service_check1">
                             Catering / $700
                             <br/>
-                            <input class="form-check-input" type="checkbox" name="services[]" value="Breakfast"
+                            <input class="form-check-input" type="checkbox" name="service[]" value="Breakfast"
                                    id="service_check2">
                             Decoration / $450
                             <br/>
-                            <input class="form-check-input" type="checkbox" name="services[]" value="Room Services"
+                            <input class="form-check-input" type="checkbox" name="service[]" value="Room Services"
                                    id="service_check1">
                             Sound System / $250
                             <br/>

@@ -74,16 +74,16 @@ if (!empty($checkin)) {
 
 //Total Price
 if ($roomtype == 'card1') {
-    $total_price = $duration * 800;
+    $total_price = $duration*800;
 } else if ($roomtype == 'card2') {
-    $total_price = $duration * 900;
+    $total_price = $duration*900;
 } else if ($roomtype == 'card3') {
-    $total_price = $duration * 300;
+    $total_price = $duration*300;
 }
 
 //Services
 if (isset($service)) {
-    $total_price += 20 * count($service);
+    $total_price += 20*count($service);
 }
 if (!empty($service)) {
     $service_dsply = '';
