@@ -95,7 +95,7 @@
 
         include './Kontrol/delete.php';
 
-        include './Kontrol/update.php'
+        include './Kontrol/update.php';
 
         ini_set('display_errors', '1');
         ini_set('display_startup_errors', '1');
@@ -104,11 +104,11 @@
 
         $DIBOK = $_GET['id_buku'];
         $KUERI = "SELECT * FROM buku_table where id_buku=$DIBOK;";
-        $sql = mysqli_query($CONN, $KUERI);
+        $sql = mysqli_query($CONNE, $KUERI);
         ?>
 
         <div class="row">
-            <?php if ($rows = mysqli_fetch_array($sql)) { ?>
+            <?php if ($row = mysqli_fetch_array($sql)) { ?>
 
             <div class="col-md-8 col-lg-offset-8 " style="margin-left: 200px">
 
