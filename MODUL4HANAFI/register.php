@@ -2,13 +2,13 @@
 include_once('config.php');
 $R6G1ST6R1 = new database();
 if (isset($_POST['register'])) {
-    $R6G1ST6R1 = $_POST['nama'];
-    $R6G1ST6R1 = $_POST['email'];
-    $R6G1ST6R1 = $_POST['no_hp'];
-    $R6G1ST6R1 = ($_POST['password']);
+    $R6G1ST6R2 = $_POST['nama'];
+    $R6G1ST6R3 = $_POST['email'];
+    $R6G1ST6R4 = $_POST['no_hp'];
+    $R6G1ST6R5 = ($_POST['password']);
 
     if ($_POST['konfirmasi_password'] == $_POST['password']) {
-        if ($R6G1ST6R1->register($R6G1ST6R1, $R6G1ST6R1, $R6G1ST6R1, $R6G1ST6R1)) {
+        if ($R6G1ST6R1->register($R6G1ST6R2, $R6G1ST6R3, $R6G1ST6R4, $R6G1ST6R5)) {
             header("Refresh:2; url=login.php");
             echo '<div class="alert alert-warning" role="alert">';
             echo 'Berhasil registrasi';

@@ -1,6 +1,6 @@
 <?php
 
-$loca = "localhost:3307";
+$loca = "localhost";
 $ser = "root";
 $pw = "";
 $DBKU = "wad_modul4";
@@ -8,7 +8,7 @@ $Koneksi = mysqli_connect($loca, $ser, $pw, $DBKU);
 
 class database
 {
-    var $hst = "localhost:3307";
+    var $hst = "localhost";
     var $USR = "root";
     var $PASS = "";
     var $SBKU = "wad_modul4";

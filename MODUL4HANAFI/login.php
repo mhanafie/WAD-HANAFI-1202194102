@@ -1,6 +1,7 @@
 <?php
+session_start();
 include_once('config.php');
-$DB = new databases();
+$DB = new database();
 
 if (isset($_SESSION['is_login'])) {
     header('location:index.php');
