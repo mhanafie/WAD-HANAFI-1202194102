@@ -35,7 +35,7 @@ class PatientsController extends Controller
 
     public function add($id, Request $request)
     {
-        $image = time().'.'.$request->image->extension();
+        $image = time() . '.' . $request->image->extension();
         $request->image->move(public_path('image/patients'), $image);
 
         $patient = new patients();

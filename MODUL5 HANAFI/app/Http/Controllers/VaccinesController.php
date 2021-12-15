@@ -30,7 +30,7 @@ class VaccinesController extends Controller
 
     public function add(Request $request)
     {
-        $image = time().'.'.$request->image->extension();
+        $image = time() . '.' . $request->image->extension();
         $request->image->move(public_path('image/vaccines'), $image);
 
         $Vaccine = new Vaccines();
@@ -65,10 +65,9 @@ class VaccinesController extends Controller
         return redirect(route('vaccine.index'));
     }
 
-    public function drop($id) 
+    public function drop($id)
     {
         $Vaccine = Vaccines::find($id);
-        $Vaccine->delete();
         return redirect(route('vaccine.index'));
     }
 

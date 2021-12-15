@@ -10,18 +10,18 @@
             <div class="input-group mb-3">
                 <input type="text" class="form-control" name="name">
             </div>
-            
+
             <label>Price</label>
             <div class="input-group mb-3">
                 <span class="input-group-text">Rp</span>
                 <input type="number" class="form-control" name="price">
             </div>
-            
+
             <label>Description</label>
             <div class="input-group">
                 <textarea class="form-control" name="description"></textarea>
             </div>
-    
+
             <div class="my-3">
                 <label>Image</label><br>
                 <input type="file" name="image">
@@ -29,5 +29,5 @@
             <button class="btn btn-primary" type="submit">Tambah</button>
         </form>
     </div>
-    
+
 @endsection

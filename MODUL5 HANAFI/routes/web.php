@@ -24,7 +24,7 @@ Route::get('/', function () {
 
 Route::get('/vaccine', [VaccinesController::class, 'index'])->name('vaccine.index');
 Route::get('/vaccine/tambah', [VaccinesController::class, 'tambah'])->name('vaccine.tambah');
-Route::post('/vaccine/tambah', [VaccinesController::class, 'add'])->name('vaccine.add');
+Route::get('/vaccine/tambah', [VaccinesController::class, 'add'])->name('vaccine.add');
 Route::get('/vaccine/edit/{id}', [VaccinesController::class, 'edit'])->name('vaccine.edit');
 Route::post('/vaccine/edit/{id}', [VaccinesController::class, 'replace'])->name('vaccine.replace');
 Route::get('/vaccine/delete/{id}', [VaccinesController::class, 'drop'])->name('vaccine.drop');
